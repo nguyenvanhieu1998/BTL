@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FAFAF7"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <include
+        android:id="@+id/id_ActivityBaiVietCuaToi_ActionBar"
+        layout="@layout/bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+    </include>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/id_txtDuocDuyet"
+                android:textColor="#070706"
+                android:text="1) Được duyệt :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <FrameLayout
+                android:layout_width="40dp"
+                android:layout_height="5dp"
+                android:background="#1C35C2"
+                android:layout_toEndOf="@id/id_txtDuocDuyet"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="11dp"
+                android:layout_toRightOf="@+id/id_txtDuocDuyet">
+            </FrameLayout>
+            <TextView
+                android:id="@+id/id_txtChoDuyet"
+                android:text="2) Chờ duyệt :"
+                android:textColor="#070706"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/id_txtDuocDuyet"
+                android:layout_height="wrap_content" />
+            <FrameLayout
+                android:layout_width="40dp"
+                android:layout_height="5dp"
+                android:background="#ff0"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="19dp"
+                android:layout_below="@id/id_txtDuocDuyet"
+                android:layout_toRightOf="@+id/id_txtChoDuyet">
+            </FrameLayout>
+            <TextView
+                android:id="@+id/id_txtkhongDuyet"
+                android:text="3) Không duyệt :"
+                android:textColor="#070706"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id_txtChoDuyet"/>
+            <FrameLayout
+                android:layout_width="40dp"
+                android:layout_height="5dp"
+                android:background="#EE2011"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@id/id_txtChoDuyet"
+                android:layout_toRightOf="@+id/id_txtkhongDuyet">
+            </FrameLayout>
+        </RelativeLayout>
+    </FrameLayout>
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/id_ActivityBaiVietCuaToi_rcvListMyPost"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_height="wrap_content">-->
+    <!--</android.support.v7.widget.RecyclerView>-->
+    <ListView
+        android:id="@+id/id_ActivityBaiVietCuaToi_ListMyPost"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+    </ListView>
+    <TextView
+        android:id="@+id/id_ActivityBaiVietCuaToi_txtThongBao"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:text="Bạn không có bài viết nào "
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

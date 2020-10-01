@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:background="@drawable/custom_backgroud_item_baidang"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:padding="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/id_myPostItem_imgFace"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:src="@drawable/no_image" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/id_myPostItem_txtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textColor="@color/colorBlue"
+                    android:textStyle="bold"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/id_myPostItem_txtNoiDung"
+                    android:layout_width="150dp"
+                    android:layout_height="11dp"
+                    android:text="Nội dung"
+                    android:textStyle="normal"
+                    android:textColor="#0C0C0C"
+                    android:textSize="8sp" />
+
+                <TextView
+                    android:id="@+id/id_myPostItem_txtThoiGian"
+                    android:layout_width="150dp"
+                    android:layout_height="11dp"
+                    android:text="Thời gian"
+                    android:textStyle="normal"
+                    android:textColor="#0C0C0C"
+                    android:textSize="8sp" />
+            </LinearLayout>
+             <RelativeLayout
+                 android:layout_width="7dp"
+                 android:layout_marginTop="5dp"
+                 android:layout_marginLeft="137dp"
+                 android:layout_height="35dp">
+            <FrameLayout
+                android:id="@+id/id_myPostItem_choDuyet"
+                android:layout_width="13dp"
+                android:visibility="gone"
+                android:layout_height="48dp"
+                android:background="#ff0"
+                 />
+                 <FrameLayout
+                     android:id="@+id/id_myPostItem_daDuyet"
+                     android:layout_width="13dp"
+                     android:layout_height="48dp"
+                     android:visibility="gone"
+                     android:background="#1C35C2"
+                     />
+                 <FrameLayout
+                     android:id="@+id/id_myPostItem_khongDuyet"
+                     android:layout_width="13dp"
+                     android:layout_height="48dp"
+                     android:visibility="gone"
+                     android:background="#EE2011"
+                     />
+             </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

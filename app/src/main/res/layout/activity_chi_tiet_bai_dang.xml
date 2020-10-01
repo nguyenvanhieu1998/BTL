@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#FCF9F9"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/bar_layout"
+        android:id="@+id/id_ActivityChiTietBaiDang_ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"></include>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/id_ActivityChiTietBaiDang_imgThanhVien"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/no_image" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/id_ActivityChiTietBaiDang_txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlue"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/id_ActivityChiTietBaiDang_txtAccountType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#0F0F0F"
+                android:layout_below="@id/id_ActivityChiTietBaiDang_txtName"
+                android:textStyle="bold"
+                android:text="Account Type :"
+                android:textSize="10sp" />
+        </RelativeLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/custom_backgroud_item_baidang"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/id_ActivityChiTietBaiDang_txtNoiDung"
+        android:text="1) Nội dung :"
+        android:textColor="#0F0F0F"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/id_ActivityChiTietBaiDang_txtThoiGianDang"
+        android:text="2) Thời gian đăng :"
+        android:textColor="#0F0F0F"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    android:background="@drawable/custom_backgroud_chitietbaidang"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/id_frame_backgroud"
+        android:layout_width="0dp"
+        android:layout_weight="6"
+        android:padding="5dp"
+        android:background="@color/colorBlue"
+        android:layout_height="35dp">
+    </FrameLayout>
+    <FrameLayout
+        android:layout_weight="4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/id_ActivityChiTietBaiDang_imgCall"
+        android:src="@mipmap/call_3"
+        android:layout_width="30dp"
+        android:layout_height="25dp" />
+    <ImageView
+        android:id="@+id/id_ActivityChiTietBaiDang_imgMesseage"
+        android:src="@mipmap/email_3"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/id_ActivityChiTietBaiDang_imgCall"
+        />
+    <ImageView
+        android:id="@+id/id_ActivityChiTietBaiDang_imgChat"
+        android:src="@mipmap/chat_3"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/id_ActivityChiTietBaiDang_imgMesseage"
+       />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

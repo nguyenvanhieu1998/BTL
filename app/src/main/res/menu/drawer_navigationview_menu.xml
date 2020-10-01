@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/id_groudmenu" android:checkableBehavior="single">
+        <item
+            android:id="@+id/id_menu_baiVietChoDuyet"
+            android:title="Bài viết chờ phê duyệt"
+            android:icon="@mipmap/duyet_4"
+            android:checkable="false">
+        </item>
+        <item
+            android:id="@+id/id_menu_baiVietKhongDuyet"
+            android:title="Bài viết không duyệt"
+            android:icon="@mipmap/khongduyet_4"
+            android:checkable="false">
+        </item>
+        <item
+            android:id="@+id/id_menu_DSStartUp"
+            android:title="Danh sách Startup"
+            android:icon="@mipmap/startup_4"
+            android:checkable="false">
+        </item>
+        <item
+        android:id="@+id/id_menu_DSCompany"
+        android:title="Danh sách Company"
+        android:icon="@mipmap/company_4"
+        android:checkable="false">
+    </item>
+
+        <item
+            android:id="@+id/id_menu_DSPerson"
+            android:title="Danh sách Person"
+            android:icon="@mipmap/person_3"
+            android:checkable="false">
+        </item>
+    </group>
+</menu>

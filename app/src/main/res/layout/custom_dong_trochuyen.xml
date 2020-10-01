@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@+id/id_imgAnh_dongTroChuyen"
+        android:src="@drawable/no_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/id_txtName_dongTroChuyen"
+            android:text="Name"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+        android:id="@+id/id_txtHinhThuc_dongTroChuyen"
+        android:text="Hình thức"
+        android:textSize="10sp"
+        android:layout_width="150dp"
+        android:layout_height="15dp" />
+    </LinearLayout>
+    <ImageView
+        android:src="@android:drawable/ic_menu_delete"
+        android:id="@+id/id_imgDelete_dongTroChuyen"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FAFAF4"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <include
+        android:id="@+id/id_ActivityTrangChu_ActionBar"
+        layout="@layout/bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"></include>
+    <ListView
+        android:id="@+id/id_ActivityChoPheDuyet_lvPostKhongDuyet"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"></ListView>
+    <ListView
+        android:id="@+id/id_ActivityChoPheDuyet_lvPostDuyet"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"></ListView>
+</LinearLayout>

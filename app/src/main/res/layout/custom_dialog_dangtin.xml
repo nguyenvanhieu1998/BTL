@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/id_DialogDangTin_txtTittle"
+        android:text="Nhập thông tin muốn đăng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlue"
+        android:layout_gravity="center"
+        android:textStyle="bold"/>
+    <TextView
+        android:text="Hình thức :"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:id="@+id/id_DialogDangTin_rdgHinhThuc"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/id_DialogDangTin_rdbChoVay"
+            android:text="Cho vay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/id_DialogDangTin_rdbCanVay"
+            android:text="Cần vay"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+    <EditText
+        android:id="@+id/id_DialogDangTin_edtNoiDung"
+        android:hint="Nhập nội dung"
+        android:textSize="13sp"
+        android:textColor="#0A0A0A"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <EditText
+        android:id="@+id/id_DialogDangTin_edtSoTien"
+        android:hint="Nhập số tiền"
+        android:textSize="13sp"
+        android:textColor="#0A0A0A"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <EditText
+        android:id="@+id/id_DialogDangTin_edtLaiSuat"
+        android:hint="Nhập lãi suất "
+        android:textSize="13sp"
+        android:textColor="#0A0A0A"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <EditText
+        android:id="@+id/id_DialogDangTin_edtThoiHan"
+        android:hint="Nhập thời hạn"
+        android:textSize="13sp"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginTop="1dp"
+        android:textColor="#0A0A0A"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:padding="10dp"
+        android:gravity="right">
+        <Button
+            android:id="@+id/id_DialogDangTin_btnDang"
+            android:text="Đăng tin"
+            android:textSize="13sp"
+            android:background="@drawable/custom_buttom_trangchu"
+            android:textColor="@color/colorWhite"
+            android:textAllCaps="false"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp" />
+        <Button
+            android:id="@+id/id_DialogDangTin_btnHuy"
+            android:text="Hủy"
+            android:background="@drawable/custom_buttom_trangchu"
+            android:textColor="@color/colorWhite"
+            android:textAllCaps="false"
+            android:layout_height="35dp"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="20dp"
+            android:textSize="13sp"
+            android:layout_toRightOf="@+id/id_DialogDangTin_btnDang"/>
+    </RelativeLayout>
+</LinearLayout>

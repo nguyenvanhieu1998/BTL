@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FAFAF4"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/bar_layout"
+        android:id="@+id/id_ActivityCapNhatDangKi_ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"></include>
+    <TextView
+        android:id="@+id/id_ActivityCapNhatDangKi_txtEmail"
+        android:text="Email"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/id_ActivityCapNhatDangKi_imgAnh"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="145dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/no_image"
+        />
+    <ImageView
+        android:id="@+id/id_ActivityCapNhatDangKi_imgCamera"
+        android:src="@drawable/camera"
+        android:layout_width="25dp"
+        android:scaleType="fitCenter"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="55dp"
+        android:layout_height="20dp" />
+    <ImageView
+        android:id="@+id/id_ActivityCapNhatDangKi_imgFolder"
+        android:src="@drawable/folder"
+        android:layout_marginLeft="5dp"
+        android:layout_width="20dp"
+        android:layout_marginTop="55dp"
+        android:scaleType="fitCenter"
+        android:layout_height="20dp" />
+
+</LinearLayout>
+    <EditText
+        android:id="@+id/id_ActivityCapNhatDangKi_edtName"
+        android:hint="Name"
+        android:padding="7dp"
+        android:textSize="13sp"
+        android:background="@drawable/custom_edittextdangnhap"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"/>
+    <EditText
+        android:id="@+id/id_ActivityCapNhatDangKi_edtPhone"
+        android:hint="Phone"
+        android:padding="7dp"
+        android:textSize="13sp"
+        android:background="@drawable/custom_edittextdangnhap"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"/>
+    <EditText
+        android:id="@+id/id_ActivityCapNhatDangKi_edtAddress"
+        android:hint="Address"
+        android:padding="7dp"
+        android:textSize="13sp"
+        android:background="@drawable/custom_edittextdangnhap"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"/>
+    <TextView
+        android:text="Account Type"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="42dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioGroup
+            android:id="@+id/id_ActivityCapNhatDangKi_rdgAccountType"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/id_ActivityCapNhatDangKi_rdCompany"
+                android:text="Company"
+                android:layout_marginLeft="39dp"
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/id_ActivityCapNhatDangKi_rdStartup"
+                android:text="Startup"
+                android:textSize="13sp"
+                android:layout_marginLeft="39dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/id_ActivityCapNhatDangKi_rdPerson"
+                android:text="Person"
+                android:textSize="13sp"
+                android:layout_marginLeft="39dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+    </LinearLayout>
+    <Button
+        android:id="@+id/id_ActivityCapNhatDangKi_btnCapNhatThongTin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button_activitydangnhap"
+        android:text="Cập nhật thông tin"
+        android:textColor="#F7F7F0"
+        android:textAllCaps="false"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"/>
+</LinearLayout>

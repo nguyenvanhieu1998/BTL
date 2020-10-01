@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#FCF8F8"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/bar_layout"
+        android:id="@+id/id_ActivityDangKi_ActionBar"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"></include>
+    <TextView
+        android:id="@+id/id_ActivityDangNhap_txtDangNhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#045292"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="ĐĂNG KÍ"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/id_ActivityDangKi_edtEmail"
+        android:hint="email@gmail.com"
+        android:padding="7dp"
+        android:textSize="13sp"
+        android:background="@drawable/custom_edittextdangnhap"
+        android:layout_width="match_parent"
+        android:inputType="textEmailAddress"
+        android:layout_height="33dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"/>
+    <EditText
+        android:id="@+id/id_ActivityDangKi_edtPassword"
+        android:hint="Password"
+        android:padding="7dp"
+        android:textSize="13sp"
+        android:background="@drawable/custom_edittextdangnhap"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="40dp"
+        android:inputType="textPassword"
+        android:layout_marginRight="40dp"/>
+    <EditText
+        android:id="@+id/id_ActivityDangKi_edtRePassword"
+        android:hint="Repassword"
+        android:padding="7dp"
+        android:textSize="13sp"
+        android:background="@drawable/custom_edittextdangnhap"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/id_ActivityDangKi_btnDangKi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button_activitydangnhap"
+        android:text="ĐĂNG KÍ"
+        android:textColor="#F7F7F0"
+        android:textAllCaps="false"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <!--<Button-->
+        <!--android:id="@+id/id_ActivityDangKi_btnHuy"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="36dp"-->
+        <!--android:background="@drawable/custom_button_activitydangnhap"-->
+        <!--android:text="Hủy"-->
+        <!--android:textAllCaps="false" />-->
+</LinearLayout>

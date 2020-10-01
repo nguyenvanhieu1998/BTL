@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/id_chat_imgUser"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/camera"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/id_chat_txtMessage"
+            android:layout_width="wrap_content"
+            android:text="Hello"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:background="@drawable/backgroud_sendmessage_right"
+            android:textColor="@color/colorWhite"
+            android:layout_toRightOf="@id/id_chat_imgUser"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+        <ImageView
+            android:id="@+id/id_chat_imgMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id_chat_txtMessage"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/camera"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:textSize="13sp"
+            android:id="@+id/id_chat_txtSeen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id_chat_imgMessage"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+</RelativeLayout>

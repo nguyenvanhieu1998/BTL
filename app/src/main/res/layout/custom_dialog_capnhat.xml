@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/id_DialogDangTin_txtTittle"
+        android:text="Cập nhật thông tin "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlue"
+        android:layout_gravity="center"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/id_DialogCapNhat_edtName"
+        android:hint="Name"
+        android:textSize="13sp"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <EditText
+        android:id="@+id/id_DialogCapNhat_edtPhone"
+        android:hint="Phone"
+        android:textSize="13sp"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <EditText
+        android:id="@+id/id_DialogCapNhat_edtAddress"
+        android:hint="Address"
+        android:textSize="13sp"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <EditText
+        android:id="@+id/id_DialogCapNhat_edtEmail"
+        android:hint="Email"
+        android:textSize="13sp"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <TextView
+        android:text="Account Type"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="21dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioGroup
+            android:id="@+id/id_DialogCapNhat_rdgAccountType"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/id_DialogCapNhat_rdCompany"
+                android:text="Company"
+                android:layout_marginLeft="19dp"
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/id_DialogCapNhat_rdStartup"
+                android:text="Startup"
+                android:textSize="13sp"
+                android:layout_marginLeft="19dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/id_DialogCapNhat_rdPerson"
+                android:text="Person"
+                android:textSize="13sp"
+                android:layout_marginLeft="19dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="right">
+        <Button
+            android:id="@+id/id_DialogCapNhat_btnCapNhat"
+            android:text="Cập nhật"
+            android:textSize="13sp"
+            android:textAllCaps="false"
+            android:background="@drawable/custom_buttom_trangchu"
+            android:textColor="@color/colorWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp" />
+        <Button
+            android:id="@+id/id_DialogCapNhat_btnHuy"
+            android:text="Hủy"
+            android:textAllCaps="false"
+            android:background="@drawable/custom_buttom_trangchu"
+            android:textColor="@color/colorWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginRight="20dp"
+            android:textSize="13sp"
+            android:layout_toRightOf="@+id/id_DialogCapNhat_btnCapNhat"/>
+    </RelativeLayout>
+</LinearLayout>

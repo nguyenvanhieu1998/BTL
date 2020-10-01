@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="2dp"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/id_FragmentTroChuyen_DSUser_imgUser"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_mood_black_24dp"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/id_FragmentTroChuyen_DSUser_imgOnline"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        app:civ_border_width="7dp"
+        android:visibility="gone"
+        app:civ_border_color="@color/colorBlue"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-10dp"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/id_FragmentTroChuyen_DSUser_imgOffline"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        app:civ_border_width="7dp"
+
+        app:civ_border_color="@color/colorGrey"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-10dp"
+        />
+</LinearLayout>

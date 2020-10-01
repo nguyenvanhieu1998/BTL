@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="10"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <include
+        android:id="@+id/id_ActivityTrangChu_ActionBar"
+        layout="@layout/bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"></include>
+    <FrameLayout
+        android:id="@+id/id_ActivityTrangChu_FrameContainer"
+        android:layout_width="match_parent"
+        android:background="#F5F5F0"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        >
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="@drawable/custom_backgroud_navigation"></FrameLayout>
+<android.support.design.widget.BottomNavigationView
+    android:id="@+id/id_ActivityTrangChu_bottomNavi"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.9"
+    android:background="#FCFCF7"
+    app:itemIconTint="@drawable/custom_bottomnavi"
+    app:itemTextColor="@drawable/custom_bottomnavi"
+    app:menu="@menu/bottom_navigationview">
+</android.support.design.widget.BottomNavigationView>
+</LinearLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/id_NaviView"
+        android:layout_marginTop="40dp"
+        app:headerLayout="@layout/navigation_header"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        app:itemTextColor="@color/colorPrimaryDark"
+        app:menu="@menu/drawer_navigationview_menu"
+        android:layout_gravity="start">
+        <include layout="@layout/navigation_header"></include>
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

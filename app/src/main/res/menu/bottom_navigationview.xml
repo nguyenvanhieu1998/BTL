@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/id_bottomThongTin"
+        android:title="Thông tin"
+        android:icon="@drawable/ic_info_black_24dp"
+
+        >
+    </item>
+    <item android:id="@+id/id_bottomTrangChu"
+        android:title="Trang chủ"
+        android:icon="@drawable/ic_home_black_24dp"
+        >
+    </item>
+    <item android:id="@+id/id_bottomTroChuyen"
+        android:title="Trò chuyện"
+        android:icon="@drawable/ic_chat_black_24dp">
+    </item>
+</menu>
